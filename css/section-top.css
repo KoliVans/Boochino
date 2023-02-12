@@ -1,0 +1,140 @@
+.section-top{
+	height: 100vh;
+	background: black url(../img/section-top/Main_side.jpg) no-repeat center;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+	background-size: cover;
+	position: relative;
+	min-height: 600px;
+	padding: 150px 0px 100px;
+	border: 6px solid black;
+}
+
+.section-top::before{
+	width: 100%;
+	height: 100%;
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: rgba(0, 0, 0,.2);
+	top: 0;
+	left: 0;
+}
+
+.section-top__container{
+	position: relative;
+}
+
+
+.section-top__title{
+	font-size: 160px;
+	margin: 0;
+	text-transform: uppercase;
+	animation: neon-3 5s steps(1, start) infinite reverse;
+}
+
+.section-top__info{
+	font-family: 'Pacifico', cursive;
+	font-size: 35px;
+	margin: 0;
+	color: whitesmoke;
+}
+
+
+@keyframes neon-3 {
+	0%{
+		color: #0b3960;
+		text-shadow: 0 0 7px #0b3960, 0 0 8px #0b3960;
+	}
+	80%{
+		color: #fff;
+		text-shadow: 0 0 6px #fff,0 0 10px #fff,0 0 50px #79a7fc;
+	}
+	81%{
+		color: #E1F5FE;
+		text-shadow: 0 0 6px #fff,0 0 10px #fff,0 0 50px #79a7fc;
+	}
+	82%{color: #0b3960;
+		text-shadow: 0 0 7px #0b3960, 0 0 8px #0b3960;
+	}
+	83%{
+		color: #E1F5FE;
+		text-shadow: 0 0 6px #fff,0 0 10px #fff,0 0 50px #79a7fc;
+	}
+	84%{
+		color: #0b3960;
+		text-shadow: 0 0 7px #0b3960, 0 0 8px #0b3960;
+	}
+	85%{
+		color: #E1F5FE;
+		text-shadow: 0 0 6px #fff,0 0 10px #fff,0 0 50px #79a7fc;
+	}
+	100%{
+		color: #0b3960;
+		text-shadow: 0 0 7px #0b3960,0 0 8px #0b3960;
+	}
+}
+
+@media (max-width: 576px){
+	.section-top__title{
+		font-size: 60px;
+	}
+	.section-top__info{
+		font-size: 25px;
+	}
+}
+
+@media (max-width: 360px){
+	.section-top__title{
+		font-size: 50px;
+	}
+	.section-top__info{
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 1536px){
+	.section-top__title{
+		font-size: 130px;
+	}
+
+	.section-top__info{
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 1259px){
+
+	.section-top__title{
+		font-size: 120px;
+	}
+	.section-top__info{
+		font-size: 22px;
+	}
+}
+
+
+@media (max-width: 820px){
+	.section-top__title{
+		font-size: 78px;
+	}
+	.section-top__info{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 557px){
+	.section-top__title{
+		font-size: 65px;
+	}
+}
+
+@media (max-width: 480px){
+	.section-top__title{
+		font-size: 50px;
+	}
+}

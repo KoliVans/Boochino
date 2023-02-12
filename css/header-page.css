@@ -1,0 +1,259 @@
+.header-page{
+	position: fixed;
+	top: 0;
+	background-color: rgba(0, 0, 0, .8);
+	left: 0;
+	width: 100%;
+	z-index: 5;
+	padding: 5px 0px;
+	overflow: hidden;
+}
+
+.header-page__container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo{
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo__name{
+	font-weight: 900;
+	display: flex;
+	color: white;
+	font-size: 45px;
+	padding-left: 40px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Philosopher', sans-serif;
+	text-transform: uppercase;
+	text-shadow:0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+
+.logo__img{
+	border: 3px solid black;
+	border-radius: 50%;
+}
+
+.header-page__nav{
+	margin-right: 25px;
+}
+
+.header-page__end{
+	display: flex;
+	align-items: center;
+}
+
+.header-page__ul{
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.header-page__link{
+	font-weight: 900;
+	color: white;
+	font-size: 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	padding: 15px 35px;
+	position: relative;
+	transition: color .2s;
+}
+
+.phone__item{
+	font-family: 'Philosopher', sans-serif;
+	font-weight: 900;
+	color:#fff;
+	text-decoration: none;
+	border: 3px solid white;
+	border-radius: 21px;
+	padding: 15px 20px;
+	transition: color .2s, background .2s, opacity .2s;
+}
+
+.header-page__link::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background: rgb(231, 231, 231);
+	width: 100%;
+	height: calc(100% + 40px);
+	transform: translateY(-50%);
+	opacity: 0;
+	transition: color .2s, background .2s, opacity .2s;
+	border-radius: 10%;
+}
+
+.header-page__link:hover{
+	color:black;
+}
+
+.header-page__link:hover::before{
+	opacity: 1;
+	box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.7),
+	inset 0px 0px 2px 1px rgba(0, 0, 0, 0.7),
+	inset 0px 0px 4px 1px rgba(0, 0, 0, 0.7),
+	inset 0px 0px 6px 1px rgba(0, 0, 0, 0.7);
+}
+
+.header-page__text{
+	position: relative;
+	transition: color .2s;
+}
+
+.phone__item:hover{
+	color:black;
+	opacity: 1;
+	background: rgb(231, 231, 231);
+	box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.7),
+	inset 0px 0px 2px 1px rgba(0, 0, 0, 0.7),
+	inset 0px 0px 4px 1px rgba(0, 0, 0, 0.7),
+	inset 0px 0px 6px 1px rgba(0, 0, 0, 0.7);
+}
+
+.phone__item:active{
+	opacity: 0.7;
+}
+
+.header-page__burger{
+	display: none;
+	margin-right: 15px;
+}
+
+@media (max-width: 1536px){
+	.header-page__link{
+		font-size: 20px;
+		padding: 12px 20px;
+	}
+	.phone__item{
+		font-size: 18px;
+	}
+	.logo__name{
+		font-size: 35px;
+		padding-left: 10px;
+	}
+	.logo__img{
+		width: 80px;
+		height: 80px;
+	}
+}
+
+@media (max-width: 1165px){
+	.header-page__link{
+		font-size: 18px;
+		padding: 10px 15px;
+	}
+	.phone__item{
+		font-size: 15px;
+	}
+	.logo__name{
+		padding-left: 10px;
+	}
+	.logo__img{
+		width: 60px;
+		height: 60px;
+	}
+}
+
+@media (max-width: 1025px){
+	.header-page__nav{
+		display: none;
+	}
+	.header-page__burger{
+		display: block;
+	}
+}
+
+@media (max-width: 750px){
+
+	.logo__name{
+		font-size: 30px;
+	}
+	.phone__item{
+		display: none;
+	}
+	.header-page{
+		padding: 5px;
+	}
+}
+
+@media (max-width: 557px){
+	.logo__name{
+		font-size: 26px;
+		padding-top: 3px;
+	}
+	.logo__img{
+		width: 50px;
+		height: 50px;
+	}
+}
+
+@media (max-width: 557px){
+	.logo__name{
+		font-size: 20px;
+		padding-top: 3px;
+	}
+	.logo__img{
+		width: 50px;
+		height: 50px;
+	}
+	.button-menu__box{
+		margin-left: 20px;
+	}
+}
+
+.button-menu{
+	border-radius: 0;
+	border: 0;
+	display: inline-block;
+	padding: 15px;
+	cursor: pointer;
+	background: none;
+	
+}
+
+.button-menu__box{
+	display: inline-block;
+	width: 40px;
+	height: 24px;
+}
+
+.button-menu__inner{
+	position: relative;
+	display: block;
+	top: 65%;
+}
+
+.button-menu__inner::before,
+.button-menu__inner::after,
+.button-menu__inner{
+	background: #fff;
+	height: 4px;
+	width: 100%;
+	border-radius: 7px;
+}
+
+.button-menu__inner::before,
+.button-menu__inner::after{
+	content: "";
+	position: absolute;
+	left: 0;
+}
+
+.button-menu__inner::before{
+	top: -10px;
+}
+
+.button-menu__inner::after{
+	bottom: -10px;
+}
