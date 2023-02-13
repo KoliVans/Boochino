@@ -22,6 +22,10 @@ h1,h2,h3,h4,h5,h6{
 
 body{
 	font-family: 'Philosopher', sans-serif;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
 }
 
 .section__header{
@@ -32,15 +36,17 @@ body{
 	max-width: 100%;
 	margin: 0 auto;
 	width: 82%;
+	position: relative;
 }
 
 
 .side-left,.side-right {
-	background: url(../img/common/1702.m10.i304.n005.F.c06.551922376\ White\ doodle\ vegetables\ and\ fruits\ isolated\ on\ blackboard\ seamless\ vector\ pattern.jpg);
-	background-size: 300px;
+	position: relative;
 	width: 9%;
 	height: 1000vh;
-	position: relative;
+	background: url(../img/common/Contener.jpg);
+	background-size: 300px;
+	background-attachment: fixed;
 	z-index: 1;
 	border : 5px solid black;
 	border-top: 0px;
