@@ -2,7 +2,7 @@
 	background: #000000;
 	color: #fff;
 	display: inline-block;
-	width: 220px;
+	width: 150px;
 	max-width: 100%;
 	border-radius: 23px;
 	font-family: 'Philosopher', sans-serif;
@@ -26,14 +26,71 @@
 	transform: scale(.95);
 }
 
+
+
 @media (max-width: 576px) {
 .btn {
 	font-size: 19px;
 	padding: 16px 20px;
-	width: 220px;
+	width: 140px;
 }
 
 .product__discription{
 	font-size: 19px;
 }
 }
+
+/* socials start */
+.socials {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.socials__item {
+	margin-right: 7px;
+}
+
+.socials__link {
+	display: inline-block;
+}
+
+.socials__icon {
+	fill: #ffa650;
+	width: 35px;
+	height: 35px;
+	transition: fill .2s, opacity .2s;
+}
+
+.socials__icon--vk:hover {
+	fill: #5078A5;
+}
+
+.socials__icon--fb:hover {
+	fill: #3E58A1;
+}
+
+.socials__icon--inst:hover {
+	fill: #E6369C;
+}
+
+.socials__icon:active {
+	opacity: .7;
+}
+
+.socials__logo {
+	fill: #fff;
+}
+
+@media (max-width: 767px) {
+	.socials__item {
+		margin-right: 15px;
+	}
+
+	.socials__icon {
+		width: 45px;
+		height: 45px;
+	}
+}
+ /* socials end */
