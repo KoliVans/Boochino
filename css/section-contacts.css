@@ -139,7 +139,7 @@
 .footer-page {
 	padding: 25px 0;
 	background-color: rgba(0, 0, 0, 0.932);
-	z-index: 3;
+	z-index: 4;
 }
 
 .footer-page__text {
