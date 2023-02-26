@@ -20,6 +20,11 @@ h1,h2,h3,h4,h5,h6{
 	text-decoration: none;
 }
 
+ul {
+	list-style: none;
+	padding: 0;
+ }
+
 body{
 	font-family: 'Philosopher', sans-serif;
 	margin: 0px;
@@ -48,12 +53,8 @@ img{
 	position: relative;
 	display: flex;
 	justify-content: center;
-	padding-top: 20px;
-	padding-bottom: 100px;
-	box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.7),
-	inset 0px 0px 2px 2px rgba(0, 0, 0, 0.7),
-	inset 0px 0px 6px 6px rgba(0, 0, 0, 0.7),
-	inset 0px 0px 10px 10px rgba(0, 0, 0, 0.7);
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .section__title{
@@ -347,6 +348,9 @@ img{
 	.catalog__item:last-of-type .catalog__product {
 		border-bottom: 0;
 		padding-bottom: 0;
+	}
+	.section__title{
+		font-size: 50px;
 	}
 }
 

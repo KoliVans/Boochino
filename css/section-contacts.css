@@ -10,7 +10,6 @@
 .section-contacts__container::before {
 	content: '';
 	position: absolute;
-	background: url(../img/section-contacts/tomatoes.jpg) no-repeat;
 	background-size: cover;
 	width: 672px;
 	height: 397px;
