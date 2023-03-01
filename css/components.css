@@ -57,7 +57,7 @@
 }
 
 .socials__icon {
-	fill: #ffa650;
+	fill: black;
 	width: 35px;
 	height: 35px;
 	transition: fill .2s, opacity .2s;
@@ -65,10 +65,6 @@
 
 .socials__icon--vk:hover {
 	fill: #5078A5;
-}
-
-.socials__icon--fb:hover {
-	fill: #3E58A1;
 }
 
 .socials__icon--inst:hover {
@@ -164,7 +160,7 @@
  }
  
  .mobile-menu__link:hover {
-	background: #ffa650;
+	background: black;
 	color: #fff;
  }
  
@@ -186,14 +182,13 @@
  }
  
  .order__img {
-	width: 186px;
 	display: block;
 	margin: 0 auto 10px;
  }
  
  .order__title {
 	font-family: 'Montserrat', sans-serif;
-	margin: 0 0 5px;
+	margin: 0 0 30px;
 	text-align: center;
 	font-weight: 900;
  }

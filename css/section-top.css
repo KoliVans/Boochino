@@ -81,7 +81,7 @@
 
 @media (max-width: 576px){
 	.section-top__title{
-		font-size: 60px;
+		font-size: 80px;
 	}
 	.section-top__info{
 		font-size: 25px;
@@ -90,7 +90,7 @@
 
 @media (max-width: 360px){
 	.section-top__title{
-		font-size: 50px;
+		font-size: 70px;
 	}
 	.section-top__info{
 		font-size: 15px;

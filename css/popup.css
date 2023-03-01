@@ -57,7 +57,10 @@
  }
  
  .popup__title {
-	margin-bottom: 20px;
+	display: flex;
+	margin: 0 auto 20px;
+	justify-content: center;
+
  }
  
  .popup__subtitle {
@@ -68,7 +71,7 @@
  
  .popup__subtitle--order {
 	max-width: 360px;
-	margin: 0 auto 40px;
+	margin: 0 auto 20px;
  }
  
  .popup__mobile-menu {
@@ -83,6 +86,10 @@
 	text-decoration: none;
 	color: inherit;
 	white-space: nowrap;
+ }
+
+ .phone__item--accent{
+	color: black;
  }
  
  @media (max-width: 767px) {

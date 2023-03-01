@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="css/section-about.css">
 	<link rel="stylesheet" href="css/section-contacts.css">
 	<link rel="stylesheet" href="css/popup.css">
-
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
 
 	<title>Boochino</title>
@@ -32,7 +32,7 @@
 		<div class="container header-page__container">
 			<div class="header-page__start">
 				<div class="logo">
-					<img class="logo__img" src="../Boochino/img/common/fg4nx8MMqI4.jpg" alt="Logo Boochino" width="100px" height="100px">
+					<img class="logo__img" src="img/common/fg4nx8MMqI4.jpg" alt="Logo Boochino" width="100px" height="100px">
 					<div class="logo__name">Boochino</div>
 				</div>
 			</div>
@@ -41,7 +41,7 @@
 					<ul class="header-page__ul">
 						<li class="header-page__li">
 							<a class="header-page__link" href="#section-menu">
-								<span class="header-page__text">меню</span>	
+								<span class="header-page__text">Меню</span>	
 							</a>
 						</li>
 						<li class="header-page__li">
@@ -85,7 +85,7 @@
 	<!--section-top-->
 
 	<!--section-top-->
-	<section class="section section-catalog">
+	<section class="section">
 		<div class="container">
 			<header class="section__header">
 				<h2 class="info__title__main">Boochino - совершенно новое, концептуальное заведение в Нижнем Новгороде.<br>Это место, где абсолютно всё сделано для Вашего комфорта и незабываемого отдыха. 
@@ -125,6 +125,10 @@
 					</div>
 				</div>
 			</div>
+			<div class="footer-info">
+					<button class="button-next" type="button" >Бронь </button>
+					<button class="button-next" type="button" >Доставка</button>
+			</div>
 		</div>
 	</section>
 	<!--section-info-->
@@ -142,9 +146,6 @@
 	<!--section-info-->
 
 	<!--section-spesial-->
-	<section class="section section-slide">
-		
-	</section>
 	<!--section-spesial-->
 
 	<!--section-galery-->
@@ -181,40 +182,40 @@
 		<div class="container">
 			<header class="section__header">
 				<h2 class="section__title">Меню</h2>
-				<nav class="catalog-nav">
+				<nav class="catalog-nav" id="catalog-nav">
 					<ul class="catalog-nav__wrapper">
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__button is-active" type="button">Всё</button>
+							<button class="catalog-nav__button is-active" type="button" data-filter="all">Всё</button>
 						</li>
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__button" type="button">Паста</button>
+							<button class="catalog-nav__button" type="button" data-filter="Pasta">Паста</button>
 						</li>
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__button" type="button">Вок</button>
+							<button class="catalog-nav__button" type="button" data-filter="Wok">Вок</button>
 						</li>
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__button" type="button">Пицца</button>
+							<button class="catalog-nav__button" type="button" data-filter="Pizza">Пицца</button>
 						</li>
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__button" type="button">Супы</button>
+							<button class="catalog-nav__button" type="button" data-filter="Soup">Супы</button>
 						</li>
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__button" type="button">Закуски</button>
+							<button class="catalog-nav__button" type="button" data-filter="Another">Закуски</button>
 						</li>
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__button" type="button">Напитки</button>
+							<button class="catalog-nav__button" type="button" data-filter="Drink">Напитки</button>
 						</li>
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__button" type="button">Комбо</button>
+							<button class="catalog-nav__button" type="button" data-filter="Kombo">Комбо</button>
 						</li>
 					</ul>
 				</nav>
 			</header>
 			
 			<div class="catalog">
-				<div class="catalog__item">
+				<div class="catalog__item"  data-category="Pasta">
 					<div class="product catalog__product">
-						<img class="product__img" src="../Boochino/img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="">
+						<img class="product__img" src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="">
 						<div class="product__content">
 							<h3 class="product__title">Паста</h3>
 							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
@@ -230,11 +231,11 @@
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="Pizza">
 					<div class="product catalog__product">
-						<img class="product__img" src="../Boochino/img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="">
+						<img class="product__img" src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="">
 						<div class="product__content">
-							<h3 class="product__title">Паста</h3>
+							<h3 class="product__title">Пицца</h3>
 							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
 						</div>
 						<footer class="product__footer">
@@ -243,16 +244,16 @@
 									<span class="product__price-value">350</span>
 									<spam class="product__currency">&#8381;</spam>
 								</div>
-								<button class="btn product-btn" type="button">Заказать</button>
+								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
 							</div>
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="Wok" >
 					<div class="product catalog__product">
-						<img class="product__img" src="../Boochino/img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
+						<img class="product__img" src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
 						<div class="product__content">
-							<h3 class="product__title">Паста</h3>
+							<h3 class="product__title">Вок</h3>
 							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
 						</div>
 						<footer class="product__footer">
@@ -261,14 +262,14 @@
 									<span class="product__price-value">350</span>
 									<spam class="product__currency">&#8381;</spam>
 								</div>
-								<button class="btn product-btn" type="button">Заказать</button>
+								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
 							</div>
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="Pasta" >
 					<div class="product catalog__product">
-						<img class="product__img" src="../Boochino/img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
+						<img class="product__img" src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
 						<div class="product__content">
 							<h3 class="product__title">Паста</h3>
 							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
@@ -279,14 +280,14 @@
 									<span class="product__price-value">350</span>
 									<spam class="product__currency">&#8381;</spam>
 								</div>
-								<button class="btn product-btn" type="button">Заказать</button>
+								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
 							</div>
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="Pasta" >
 					<div class="product catalog__product">
-						<img class="product__img" src="../Boochino/img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
+						<img class="product__img" src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
 						<div class="product__content">
 							<h3 class="product__title">Паста</h3>
 							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
@@ -297,14 +298,14 @@
 									<span class="product__price-value">350</span>
 									<spam class="product__currency">&#8381;</spam>
 								</div>
-								<button class="btn product-btn" type="button">Заказать</button>
+								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
 							</div>
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="Pasta" >
 					<div class="product catalog__product">
-						<img class="product__img" src="../Boochino/img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
+						<img class="product__img" src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
 						<div class="product__content">
 							<h3 class="product__title">Паста</h3>
 							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
@@ -315,14 +316,14 @@
 									<span class="product__price-value">350</span>
 									<spam class="product__currency">&#8381;</spam>
 								</div>
-								<button class="btn product-btn" type="button">Заказать</button>
+								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
 							</div>
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="Pasta" >
 					<div class="product catalog__product">
-						<img class="product__img" src="../Boochino/img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
+						<img class="product__img" src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
 						<div class="product__content">
 							<h3 class="product__title">Паста</h3>
 							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
@@ -333,14 +334,14 @@
 									<span class="product__price-value">350</span>
 									<spam class="product__currency">&#8381;</spam>
 								</div>
-								<button class="btn product-btn" type="button">Заказать</button>
+								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
 							</div>
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="Pasta" >
 					<div class="product catalog__product">
-						<img class="product__img" src="../Boochino/img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
+						<img class="product__img" src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
 						<div class="product__content">
 							<h3 class="product__title">Паста</h3>
 							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
@@ -351,14 +352,14 @@
 									<span class="product__price-value">350</span>
 									<spam class="product__currency">&#8381;</spam>
 								</div>
-								<button class="btn product-btn" type="button">Заказать</button>
+								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
 							</div>
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="Pasta" >
 					<div class="product catalog__product">
-						<img class="product__img" src="../Boochino/img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
+						<img class="product__img" src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
 						<div class="product__content">
 							<h3 class="product__title">Паста</h3>
 							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
@@ -369,14 +370,14 @@
 									<span class="product__price-value">350</span>
 									<spam class="product__currency">&#8381;</spam>
 								</div>
-								<button class="btn product-btn" type="button">Заказать</button>
+								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
 							</div>
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="Pasta" >
 					<div class="product catalog__product">
-						<img class="product__img" src="../Boochino/img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
+						<img class="product__img" src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
 						<div class="product__content">
 							<h3 class="product__title">Паста</h3>
 							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
@@ -387,14 +388,14 @@
 									<span class="product__price-value">350</span>
 									<spam class="product__currency">&#8381;</spam>
 								</div>
-								<button class="btn product-btn" type="button">Заказать</button>
+								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
 							</div>
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="Pasta" >
 					<div class="product catalog__product">
-						<img class="product__img" src="../Boochino/img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
+						<img class="product__img" src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
 						<div class="product__content">
 							<h3 class="product__title">Паста</h3>
 							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
@@ -405,14 +406,14 @@
 									<span class="product__price-value">350</span>
 									<spam class="product__currency">&#8381;</spam>
 								</div>
-								<button class="btn product-btn" type="button">Заказать</button>
+								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
 							</div>
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="Pasta" >
 					<div class="product catalog__product">
-						<img class="product__img" src="../Boochino/img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
+						<img class="product__img" src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="" >
 						<div class="product__content">
 							<h3 class="product__title">Паста</h3>
 							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
@@ -423,7 +424,7 @@
 									<span class="product__price-value">350</span>
 									<spam class="product__currency">&#8381;</spam>
 								</div>
-								<button class="btn product-btn" type="button">Заказать</button>
+								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
 							</div>
 						</footer>
 					</div>
@@ -440,6 +441,9 @@
 			<h2 class="section__title section-about__title">Забронировать столик</h2>
 			<p class="section-about__text"> У нас царит неспешная 
 				спокойная атмосфера, в которой можно расслабиться, наслаждаясь вкусной едой под приятную музыку.</p>
+				<div class="footer-info">
+					<button class="button-next button-bron" type="button" >Бронь </button>
+				</div>
 		</div>
 	</div>
 </section>
@@ -452,7 +456,9 @@
 		</header>
 		<div class="contacts">
 			<div class="contacts__start">
-				<div class="contacts__map"></div>
+				<div class="contacts__map">
+					<img src="img/contacts/Hn30wHq_67I.jpg" alt="">
+				</div>
 			</div>
 			<div class="contacts__end">
 				<div class="contacts__item">
@@ -469,14 +475,14 @@
 					<h3 class="contacts__title">Социальные сети</h3>
 					<ul class="socials">
 						<li class="socials__item">
-						<a href="#" class="socials__link" target="_blank">
-							<svg class="socials__icon socials__icon--vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.2 112.2" width="35" height="35">
-								<g>
-									<circle cx="56.1" cy="56.1" r="56.1" />
-									<path class="socials__logo" d="M54,80.7h4.4a3.33,3.33,0,0,0,2-.9,3.37,3.37,0,0,0,.6-1.9s-.1-5.9,2.7-6.8,6.2,5.7,9.9,8.2c2.8,1.9,4.9,1.5,4.9,1.5l9.8-.1s5.1-.3,2.7-4.4c-.2-.3-1.4-3-7.3-8.5-6.2-5.7-5.3-4.8,2.1-14.7,4.5-6,6.3-9.7,5.8-11.3s-3.9-1.1-3.9-1.1l-11.1.1a2.32,2.32,0,0,0-1.4.3,3.58,3.58,0,0,0-1,1.2A60,60,0,0,1,70,50.9c-4.9,8.4-6.9,8.8-7.7,8.3-1.9-1.2-1.4-4.9-1.4-7.5,0-8.1,1.2-11.5-2.4-12.4a17.68,17.68,0,0,0-5.2-.5c-4,0-7.3,0-9.2.9-1.3.6-2.2,2-1.6,2.1a5.05,5.05,0,0,1,3.3,1.6c1.1,1.5,1.1,5,1.1,5s.7,9.6-1.5,10.7c-1.5.8-3.5-.8-7.9-8.4a67.05,67.05,0,0,1-4-8.2,2.82,2.82,0,0,0-.9-1.2,5.13,5.13,0,0,0-1.7-.7l-10.5.1s-1.6,0-2.2.7,0,1.9,0,1.9,8.2,19.3,17.6,29c8.5,9,18.2,8.4,18.2,8.4Z" />
-								</g>
-							</svg>
-						</a>
+							<a href="https://vk.com/boochino52" class="socials__link" target="_blank">
+								<svg class="socials__icon socials__icon--vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.2 112.2" width="35" height="35">
+								  <g>
+									 <circle cx="56.1" cy="56.1" r="56.1" />
+									 <path class="socials__logo" d="M54,80.7h4.4a3.33,3.33,0,0,0,2-.9,3.37,3.37,0,0,0,.6-1.9s-.1-5.9,2.7-6.8,6.2,5.7,9.9,8.2c2.8,1.9,4.9,1.5,4.9,1.5l9.8-.1s5.1-.3,2.7-4.4c-.2-.3-1.4-3-7.3-8.5-6.2-5.7-5.3-4.8,2.1-14.7,4.5-6,6.3-9.7,5.8-11.3s-3.9-1.1-3.9-1.1l-11.1.1a2.32,2.32,0,0,0-1.4.3,3.58,3.58,0,0,0-1,1.2A60,60,0,0,1,70,50.9c-4.9,8.4-6.9,8.8-7.7,8.3-1.9-1.2-1.4-4.9-1.4-7.5,0-8.1,1.2-11.5-2.4-12.4a17.68,17.68,0,0,0-5.2-.5c-4,0-7.3,0-9.2.9-1.3.6-2.2,2-1.6,2.1a5.05,5.05,0,0,1,3.3,1.6c1.1,1.5,1.1,5,1.1,5s.7,9.6-1.5,10.7c-1.5.8-3.5-.8-7.9-8.4a67.05,67.05,0,0,1-4-8.2,2.82,2.82,0,0,0-.9-1.2,5.13,5.13,0,0,0-1.7-.7l-10.5.1s-1.6,0-2.2.7,0,1.9,0,1.9,8.2,19.3,17.6,29c8.5,9,18.2,8.4,18.2,8.4Z" />
+								  </g>
+								</svg>
+							 </a>
 						</li>
 						<li class="socials__item">
 							<a href="#" class="socials__link" target="_blank">
@@ -506,6 +512,7 @@
 <!-- /.footer-page -->
 
 <!-- popup-menu -->
+<!-- popup-menu -->
 <div class="popup popup-menu">
 	<div class="popup__wrapper">
 	  <div class="popup__inner">
@@ -517,10 +524,10 @@
 					<a class="mobile-menu__link popup-close" href="#" data-scroll-to="section-catalog">Меню</a>
 				 </li>
 				 <li class="mobile-menu__li">
-					<a class="mobile-menu__link popup-close " href="#">Доставка</a>
+					<a class="mobile-menu__link popup-close" href="#" data-scroll-to="">Доставка</a>
 				 </li>
 				 <li class="mobile-menu__li">
-					<a class="mobile-menu__link popup-close" href="#">Бронь</a>
+					<a class="mobile-menu__link popup-close" href="#" data-scroll-to="">Бронь</a>
 				 </li>
 				 <li class="mobile-menu__li">
 					<a class="mobile-menu__link popup-close" href="#" data-scroll-to="section-contacts">Контакты</a>
@@ -532,7 +539,7 @@
 			</div>
 			<ul class="socials">
 			  <li class="socials__item">
-				 <a href="#" class="socials__link" target="_blank">
+				 <a href="https://vk.com/boochino52" class="socials__link" target="_blank">
 					<svg class="socials__icon socials__icon--vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.2 112.2" width="35" height="35">
 					  <g>
 						 <circle cx="56.1" cy="56.1" r="56.1" />
@@ -542,7 +549,7 @@
 				 </a>
 			  </li>
 			  <li class="socials__item">
-				 <a href="#" class="socials__link" target="_blank">
+				 <a href="https://vk.com/boochino52" class="socials__link" target="_blank">
 					<svg class="socials__icon socials__icon--inst" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="35" height="35">
 					  <g>
 						 <path d="M332.3,136.2H179.7a44.21,44.21,0,0,0-44.2,44.2V333a44.21,44.21,0,0,0,44.2,44.2H332.3A44.21,44.21,0,0,0,376.5,333V180.4A44.21,44.21,0,0,0,332.3,136.2ZM256,336a79.3,79.3,0,1,1,79.3-79.3A79.42,79.42,0,0,1,256,336Zm81.9-142.2A18.8,18.8,0,1,1,356.7,175,18.78,18.78,0,0,1,337.9,193.8Z" />
@@ -566,18 +573,16 @@
 		 <div class="popup__content">
 			<button class="btn-close popup__btn-close popup-close"></button>
 			<h2 class="page-title popup__title">Заполните форму</h2>
-			<p class="popup__subtitle popup__subtitle--order">Мы привезем вам горячую пиццу за 50 минут</p>
+			<p class="popup__subtitle popup__subtitle--order">Доставка в течении часа</p>
 			<div class="order">
-			  <img class="order__img" src="img/section-catalog/1.png" alt="">
+			  <img class="order__img" src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png" alt="">
 			  <h3 class="order__title">
-				 <span>Салями</span>
-				 <span>850</span> &#8381;
+				 <span class="order-product-title">Паста</span>
+				 <span class="order-product-price">350</span> &#8381;
 			  </h3>
-			  <p class="order__size">35 см</p>
 			  <form class="form">
-				 <input type="hidden" name="пицца">
-				 <input type="hidden" name="цена">
-				 <input type="hidden" name="размер">
+				 <input class="order-info-title" type="hidden" name="Паста">
+				 <input class="order-info-price" type="hidden" name="цена">
 				 <input class="form__input" type="text" name="имя" placeholder="Имя" required>
 				 <input class="form__input" type="text" name="телефон" placeholder="Телефон" required>
 				 <input class="form__input" type="text" name="адрес" placeholder="Адрес" required>
@@ -622,13 +627,15 @@
  </div>
  <!-- /.popup-error -->
  
- </body>
- </html>
-
- 	<script src="js/myLib.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=en_RU" type="text/javascript"></script>
+ 
+	<script src="js/myLib.js"></script>
 	<script src="js/header.js"></script>
 	<script src="js/popup.js"></script>
 	<script src="js/scrollTo.js"></script>
-
+	<script src="js/catalog.js"></script>
+	<script src="js/product.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="js/Slide-shou.js"></script>
 </body>
 </html>

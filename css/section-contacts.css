@@ -40,7 +40,11 @@
 
 .contacts__map {
 	height: 450px;
-	background: #fef0b4;
+}
+
+.button-bron{
+	color: black;
+	background-color: white;
 }
 
 .contacts__item {
