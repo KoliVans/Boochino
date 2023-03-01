@@ -47,35 +47,35 @@
 
 @keyframes neon-3 {
 	0%{
-		color: #0b3960;
-		text-shadow: 0 0 7px #0b3960, 0 0 8px #0b3960;
+		color: hsl(43, 97%, 23%);
+		text-shadow: 0 0 7px hsl(43, 97%, 23%), 0 0 8px hsl(43, 97%, 23%);
 	}
 	80%{
-		color: #fff;
-		text-shadow: 0 0 6px #fff,0 0 10px #fff,0 0 50px #79a7fc;
+		color: #e6a80e;
+		text-shadow: 0 0 6px #e6a80e,0 0 10px #e6a80e,0 0 50px #e6a80e;
 	}
 	81%{
-		color: #E1F5FE;
-		text-shadow: 0 0 6px #fff,0 0 10px #fff,0 0 50px #79a7fc;
+		color: hsl(43, 97%, 23%);
+		text-shadow: 0 0 6px #e6a80e,0 0 10px #e6a80e,0 0 50px #e6a80e;
 	}
-	82%{color: #0b3960;
-		text-shadow: 0 0 7px #0b3960, 0 0 8px #0b3960;
+	82%{color: hsl(43, 97%, 23%);
+		text-shadow: 0 0 7px hsl(43, 97%, 23%), 0 0 8px hsl(43, 97%, 23%);
 	}
 	83%{
-		color: #E1F5FE;
-		text-shadow: 0 0 6px #fff,0 0 10px #fff,0 0 50px #79a7fc;
+		color: hsl(43, 97%, 23%);
+		text-shadow: 0 0 6px #e6a80e,0 0 10px #e6a80e,0 0 50px #e6a80e;
 	}
 	84%{
-		color: #0b3960;
-		text-shadow: 0 0 7px #0b3960, 0 0 8px #0b3960;
+		color: hsl(43, 97%, 23%);
+		text-shadow: 0 0 7px hsl(43, 97%, 23%), 0 0 8px hsl(43, 97%, 23%);
 	}
 	85%{
-		color: #E1F5FE;
-		text-shadow: 0 0 6px #fff,0 0 10px #fff,0 0 50px #79a7fc;
+		color: hsl(43, 97%, 23%);
+		text-shadow: 0 0 6px #e6a80e,0 0 10px #e6a80e,0 0 50px #e6a80e;
 	}
 	100%{
-		color: #0b3960;
-		text-shadow: 0 0 7px #0b3960,0 0 8px #0b3960;
+		color: hsl(43, 97%, 23%);
+		text-shadow: 0 0 7px hsl(43, 97%, 23%),0 0 8px hsl(43, 97%, 23%);
 	}
 }
 

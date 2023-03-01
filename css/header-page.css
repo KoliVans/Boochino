@@ -23,7 +23,7 @@
 .logo__name{
 	font-weight: 900;
 	display: flex;
-	color: white;
+	color:#e6a80e;
 	font-size: 45px;
 	padding-left: 40px;
 	text-align: center;
@@ -31,13 +31,16 @@
 	justify-content: center;
 	font-family: 'Philosopher', sans-serif;
 	text-transform: uppercase;
-	text-shadow:0 0 10px #fff,
-               0 0 20px #fff, 
-               0 0 40px #fff;
+	font-size: 30px;
+	text-shadow:0 0 10px #e6a80e,
+               0 0 20px #e6a80e, 
+               0 0 40px #e6a80e;
 }
 
 .logo__img{
 	border: 3px solid black;
+	width: 30%;
+	height: 30%;
 	border-radius: 50%;
 }
 
@@ -60,13 +63,14 @@
 .header-page__link{
 	font-weight: 900;
 	color: white;
-	font-size: 25px;
+	font-size: 20px;
 	text-decoration: none;
 	text-transform: uppercase;
 	display: block;
 	padding: 15px 35px;
 	position: relative;
 	transition: color .2s;
+	transition: padding .4s;
 }
 
 .phone__item{
@@ -77,6 +81,7 @@
 	border: 3px solid white;
 	border-radius: 21px;
 	padding: 15px 20px;
+	font-size: 20px;
 	transition: color .2s, background .2s, opacity .2s;
 }
 
@@ -130,9 +135,14 @@
 	margin-right: 15px;
 }
 
+.header-page.is-active .header-page__link{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
 @media (max-width: 1536px){
 	.header-page__link{
-		font-size: 20px;
+		font-size: 15px;
 		padding: 12px 20px;
 	}
 	.phone__item{
@@ -143,14 +153,14 @@
 		padding-left: 10px;
 	}
 	.logo__img{
-		width: 80px;
-		height: 80px;
+		width: 60px;
+		height: 60px;
 	}
 }
 
 @media (max-width: 1165px){
 	.header-page__link{
-		font-size: 18px;
+		font-size: 13px;
 		padding: 10px 15px;
 	}
 	.phone__item{
@@ -187,16 +197,6 @@
 	}
 }
 
-@media (max-width: 557px){
-	.logo__name{
-		font-size: 26px;
-		padding-top: 3px;
-	}
-	.logo__img{
-		width: 50px;
-		height: 50px;
-	}
-}
 
 @media (max-width: 557px){
 	.logo__name{
@@ -216,10 +216,9 @@
 	border-radius: 0;
 	border: 0;
 	display: inline-block;
-	padding: 15px;
 	cursor: pointer;
 	background: none;
-	
+	padding: 0px 15px;
 }
 
 .button-menu__box{

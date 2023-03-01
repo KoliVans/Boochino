@@ -54,6 +54,7 @@
 		display: none;
 	}
 
+
 	.section-about__container {
 		justify-content: center;
 	}
@@ -66,6 +67,7 @@
 
 	.section-about__title {
 		margin: 0 20px;
+		font-size: 25px;
 	}
 
 	.section-about__text {
