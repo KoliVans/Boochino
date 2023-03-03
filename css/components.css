@@ -95,6 +95,18 @@
 		width: 45px;
 		height: 45px;
 	}
+
+	.btn{
+	display: inline-block;
+	width: 120px;
+	max-width: 100%;
+	border-radius: 23px;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 14px;
+	border: 0;
+	cursor: pointer;
+	text-align: center;
+	}
 }
  /* socials end */
 

@@ -48,7 +48,11 @@ img{
 	max-width: 100%;
 }
 
-
+.container-menu {
+	margin: 0 auto;
+	width: 85%;
+	max-width: 100%;
+}
 
 .section{
 	position: relative;
@@ -118,10 +122,6 @@ img{
 	margin: 0px auto;
 }
 
-.menu-pos{
-
-}
-
 .list-menu{
 	text-align: center;
 }
@@ -166,6 +166,10 @@ img{
 .product__content{
 	margin-bottom: 20px ;
 	flex-grow: 1;
+}
+
+.product__price{
+	margin-top: 20px;
 }
 
 .product__title{
@@ -297,7 +301,7 @@ img{
 
 @media (max-width: 767px) {
 	.catalog__item {
-		width: 100%;
+		width: 50%;
 		margin-bottom: 50px;
 	}
 
@@ -355,10 +359,13 @@ img{
 
 @media (max-width: 767px) {
 	.catalog__item {
-		width: 100%;
+		width: 50%;
 		margin-bottom: 50px;
 	}
 
+	.product__price{
+		font-size: 18px;
+	}
 	.catalog__item:nth-of-type(n)::before {
 		content: none;
 	}

@@ -1,17 +1,17 @@
 ;(function() {
-	let catalogSection = document.querySelector('.section-catalog');
+	var catalogSection = document.querySelector('.section-catalog');
  
 	if (catalogSection === null) {
 	  return;
 	}
  
-	let removeChildren = function(item) {
+	var removeChildren = function(item) {
 	  while (item.firstChild) {
 		 item.removeChild(item.firstChild);
 	  }
 	};
  
-	let updateChildren = function(item, children) {
+	var updateChildren = function(item, children) {
 	  removeChildren(item);
 	  for (var i = 0; i < children.length; i += 1) {
 		 item.appendChild(children[i]);
@@ -23,16 +23,16 @@
 	var catalogItems = catalogSection.querySelectorAll('.catalog__item');
  
 	catalogNav.addEventListener('click', function(e) {
-	   const target = e.target;
-	   const item = myLib.closestItemByClass(target, 'catalog-nav__btn');
+	  var target = e.target;
+	  var item = myLib.closestItemByClass(target, 'catalog-nav__button');
  
 	  if (item === null || item.classList.contains('is-active')) {
 		 return;
 	  }
  
 	  e.preventDefault();
-	  let filterValue = item.getAttribute('data-filter');
-	  let previousBtnActive = catalogNav.querySelector('.catalog-nav__btn.is-active');
+	  var filterValue = item.getAttribute('data-filter');
+	  var previousBtnActive = catalogNav.querySelector('.catalog-nav__button.is-active');
  
 	  previousBtnActive.classList.remove('is-active');
 	  item.classList.add('is-active');
@@ -42,9 +42,9 @@
 		 return;
 	  }
  
-	  let filteredItems = [];
-	  for ( let i = 0; i < catalogItems.length; i += 1) {
-		let current = catalogItems[i];
+	  var filteredItems = [];
+	  for (var i = 0; i < catalogItems.length; i += 1) {
+		 var current = catalogItems[i];
 		 if (current.getAttribute('data-category') === filterValue) {
 			filteredItems.push(current);
 		 }

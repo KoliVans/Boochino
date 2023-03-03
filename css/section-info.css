@@ -45,6 +45,16 @@
 	font-family: 'Philosopher', sans-serif;
 	font-weight: 900;
 	margin: 40px 20%;
+	padding-bottom: 80px ;
+}
+
+.footer_text{
+	color: black;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Philosopher', sans-serif;
+	margin: 40px 20%;
+
 }
 
 .info__content{
@@ -136,6 +146,12 @@
 	transform: scale(.95);
 }
 
+@media (max-width: 1505px) {
+ .catalog-info{
+	margin: 0px;
+ }
+	
+}
 @media (max-width: 1305px) {
 
 	.catalog-info {
@@ -172,7 +188,7 @@
 
 	.info__title__main {
 		margin: 0;
-		padding-bottom: 30px ;
+		padding-bottom: 70px ;
 	}
 
 	.info-content{
@@ -198,6 +214,11 @@
 		margin: 10px 0;
 	}
 
+	.footer_text{
+		font-size: 15px;
+		padding-top: 20px;
+		margin: 0;
+	}
 	.info__title{
 		font-size: 22px;
 	}
