@@ -20,8 +20,6 @@
 	<link rel="stylesheet" href="css/section-about.css">
 	<link rel="stylesheet" href="css/section-contacts.css">
 	<link rel="stylesheet" href="css/popup.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
 
 	<title>Boochino</title>
 </head>
@@ -108,11 +106,11 @@
 						<img class="info__img" src="img/info-icon/Clock_(89654)_-_The_Noun_Project.svg.png" alt="">
 						<div class="info__content">
 							<h3 class="info__title">Время, работы ресторана </h3>
-							<p class="info__discription">
-							<p class="info__timework">ПН-ЧТ с 11:00 до 00:00</p>
-							<p class="info__timework">ПТ-CБ c 11:00 до 02:00</p>
-							<p class="info__timework">ВС с 11:00 до 00:00</p>
-							</p>
+							<div class="info__discription">
+								<p class="info__timework">ПН-ЧТ с 11:00 до 00:00</p>
+								<p class="info__timework">ПТ-CБ c 11:00 до 02:00</p>
+								<p class="info__timework">ВС с 11:00 до 00:00</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -140,7 +138,7 @@
 		<img src="img/section-about/orig.jfif" alt="" class="section-about__img">
 		<div class="container section-about__container">
 			<div class="section-about__content">
-				<h2 class="section__title section-about__title">Приходи, на бизнесс-ланч в Boochino !</h2>
+				<h2 class="section__title section-about__title">Приходи на бизнесс-ланч в Boochino !</h2>
 				<p class="section-about__text">Приходите к нам на сытный Бизнесс-ланч с 11 до 16 часов по будням.<br>
 					Вкусный завтрак - залог успеха всего дня.</p>
 			</div>
@@ -194,272 +192,36 @@
 				<nav class="catalog-nav" id="catalog-nav">
 					<ul class="catalog-nav__wrapper">
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__button is-active" type="button" data-filter="all">Всё</button>
+							<button class="catalog-nav__button is-active" type="button" data-filter="Kitchen" onclick=filtermenu(event)>Кухня</button>
 						</li>
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__button" type="button" data-filter="Pasta">Паста</button>
+							<button class="catalog-nav__button" type="button" data-filter="Bar" onclick=filtermenu(event)>Бар</button>
 						</li>
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__button" type="button" data-filter="Wok">Вок</button>
+							<button class="catalog-nav__button" type="button" data-filter="Kombo" onclick=filtermenu(event)>Комбо</button>
 						</li>
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__button" type="button" data-filter="Pizza">Пицца</button>
-						</li>
-						<li class="catalog-nav__item">
-							<button class="catalog-nav__button" type="button" data-filter="Soup">Супы</button>
-						</li>
-						<li class="catalog-nav__item">
-							<button class="catalog-nav__button" type="button" data-filter="Another">Закуски</button>
-						</li>
-						<li class="catalog-nav__item">
-							<button class="catalog-nav__button" type="button" data-filter="Drink">Напитки</button>
-						</li>
-						<li class="catalog-nav__item">
-							<button class="catalog-nav__button" type="button" data-filter="Kombo">Комбо</button>
+							<button class="catalog-nav__button" type="button" data-filter="Biznes" onclick=filtermenu(event)>Бизнес-ланч</button>
 						</li>
 					</ul>
 				</nav>
 			</header>
 
-			<div class="catalog">
-				<div class="catalog__item" data-category="Pasta">
-					<div class="product catalog__product">
-						<img class="product__img"
-							src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png"
-							alt="">
-						<div class="product__content">
-							<h3 class="product__title">Паста</h3>
-							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
+			<div class="catalog-menu">
+				<div class="menu-pos">
+					<div class="list-menu">
+						<div class="Kitchenmenu Kitchen">
+							<img class="menu-img img-activ" src="img/section-catalog/Menu.jpg" alt="">
 						</div>
-						<footer class="product__footer">
-							<div class="product__bottom">
-								<div class="product__price">
-									<span class="product__price-value">350</span>
-									<spam class="product__currency">&#8381;</spam>
-								</div>
-								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
-							</div>
-						</footer>
-					</div>
-				</div>
-				<div class="catalog__item" data-category="Pizza">
-					<div class="product catalog__product">
-						<img class="product__img"
-							src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png"
-							alt="">
-						<div class="product__content">
-							<h3 class="product__title">Пицца</h3>
-							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
+						<div class="Barmenu Bar hidden" >
+							<img class="menu-img" src="img/contacts/Contacts.jpg" alt="">
 						</div>
-						<footer class="product__footer">
-							<div class="product__bottom">
-								<div class="product__price">
-									<span class="product__price-value">350</span>
-									<spam class="product__currency">&#8381;</spam>
-								</div>
-								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
-							</div>
-						</footer>
-					</div>
-				</div>
-				<div class="catalog__item" data-category="Wok">
-					<div class="product catalog__product">
-						<img class="product__img"
-							src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png"
-							alt="">
-						<div class="product__content">
-							<h3 class="product__title">Вок</h3>
-							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
+						<div class="Kombomenu Kombo hidden" >
+							<img  class="menu-img" src="img/section-catalog/Kombo.jpg" alt="">
 						</div>
-						<footer class="product__footer">
-							<div class="product__bottom">
-								<div class="product__price">
-									<span class="product__price-value">350</span>
-									<spam class="product__currency">&#8381;</spam>
-								</div>
-								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
-							</div>
-						</footer>
-					</div>
-				</div>
-				<div class="catalog__item" data-category="Pasta">
-					<div class="product catalog__product">
-						<img class="product__img"
-							src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png"
-							alt="">
-						<div class="product__content">
-							<h3 class="product__title">Паста</h3>
-							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
+						<div class="Biznesmenu Biznes hidden" >
+							<img  class="menu-img" src="img/contacts/Contacts.jpg" alt="">
 						</div>
-						<footer class="product__footer">
-							<div class="product__bottom">
-								<div class="product__price">
-									<span class="product__price-value">350</span>
-									<spam class="product__currency">&#8381;</spam>
-								</div>
-								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
-							</div>
-						</footer>
-					</div>
-				</div>
-				<div class="catalog__item" data-category="Pasta">
-					<div class="product catalog__product">
-						<img class="product__img"
-							src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png"
-							alt="">
-						<div class="product__content">
-							<h3 class="product__title">Паста</h3>
-							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
-						</div>
-						<footer class="product__footer">
-							<div class="product__bottom">
-								<div class="product__price">
-									<span class="product__price-value">350</span>
-									<spam class="product__currency">&#8381;</spam>
-								</div>
-								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
-							</div>
-						</footer>
-					</div>
-				</div>
-				<div class="catalog__item" data-category="Pasta">
-					<div class="product catalog__product">
-						<img class="product__img"
-							src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png"
-							alt="">
-						<div class="product__content">
-							<h3 class="product__title">Паста</h3>
-							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
-						</div>
-						<footer class="product__footer">
-							<div class="product__bottom">
-								<div class="product__price">
-									<span class="product__price-value">350</span>
-									<spam class="product__currency">&#8381;</spam>
-								</div>
-								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
-							</div>
-						</footer>
-					</div>
-				</div>
-				<div class="catalog__item" data-category="Pasta">
-					<div class="product catalog__product">
-						<img class="product__img"
-							src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png"
-							alt="">
-						<div class="product__content">
-							<h3 class="product__title">Паста</h3>
-							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
-						</div>
-						<footer class="product__footer">
-							<div class="product__bottom">
-								<div class="product__price">
-									<span class="product__price-value">350</span>
-									<spam class="product__currency">&#8381;</spam>
-								</div>
-								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
-							</div>
-						</footer>
-					</div>
-				</div>
-				<div class="catalog__item" data-category="Pasta">
-					<div class="product catalog__product">
-						<img class="product__img"
-							src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png"
-							alt="">
-						<div class="product__content">
-							<h3 class="product__title">Паста</h3>
-							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
-						</div>
-						<footer class="product__footer">
-							<div class="product__bottom">
-								<div class="product__price">
-									<span class="product__price-value">350</span>
-									<spam class="product__currency">&#8381;</spam>
-								</div>
-								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
-							</div>
-						</footer>
-					</div>
-				</div>
-				<div class="catalog__item" data-category="Pasta">
-					<div class="product catalog__product">
-						<img class="product__img"
-							src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png"
-							alt="">
-						<div class="product__content">
-							<h3 class="product__title">Паста</h3>
-							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
-						</div>
-						<footer class="product__footer">
-							<div class="product__bottom">
-								<div class="product__price">
-									<span class="product__price-value">350</span>
-									<spam class="product__currency">&#8381;</spam>
-								</div>
-								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
-							</div>
-						</footer>
-					</div>
-				</div>
-				<div class="catalog__item" data-category="Pasta">
-					<div class="product catalog__product">
-						<img class="product__img"
-							src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png"
-							alt="">
-						<div class="product__content">
-							<h3 class="product__title">Паста</h3>
-							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
-						</div>
-						<footer class="product__footer">
-							<div class="product__bottom">
-								<div class="product__price">
-									<span class="product__price-value">350</span>
-									<spam class="product__currency">&#8381;</spam>
-								</div>
-								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
-							</div>
-						</footer>
-					</div>
-				</div>
-				<div class="catalog__item" data-category="Pasta">
-					<div class="product catalog__product">
-						<img class="product__img"
-							src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png"
-							alt="">
-						<div class="product__content">
-							<h3 class="product__title">Паста</h3>
-							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
-						</div>
-						<footer class="product__footer">
-							<div class="product__bottom">
-								<div class="product__price">
-									<span class="product__price-value">350</span>
-									<spam class="product__currency">&#8381;</spam>
-								</div>
-								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
-							</div>
-						</footer>
-					</div>
-				</div>
-				<div class="catalog__item" data-category="Pasta">
-					<div class="product catalog__product">
-						<img class="product__img"
-							src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png"
-							alt="">
-						<div class="product__content">
-							<h3 class="product__title">Паста</h3>
-							<p class="product__discription">Лапша,Сливки,Курица,Баварские травы</p>
-						</div>
-						<footer class="product__footer">
-							<div class="product__bottom">
-								<div class="product__price">
-									<span class="product__price-value">350</span>
-									<spam class="product__currency">&#8381;</spam>
-								</div>
-								<button class="btn product-btn" type="button" data-popup="popup-order">Заказать</button>
-							</div>
-						</footer>
 					</div>
 				</div>
 			</div>
@@ -504,6 +266,11 @@
 						<p class="contacts__text">
 							<a class="contacts__phone" href="tel:+78312888888">+7 (831) 288-88-88</a>
 						</p>
+						<div class="info__discription-footer">
+							<p class="info__timework-footer">ПН-ЧТ с 11:00 до 00:00</p>
+							<p class="info__timework-footer">ПТ-CБ c 11:00 до 02:00</p>
+							<p class="info__timework-footer">ВС с 11:00 до 00:00</p>
+						</div>
 					</div>
 					<div class="contacts__item">
 						<h3 class="contacts__title">Социальные сети</h3>
@@ -682,8 +449,9 @@
 	<script src="js/scrollTo.js"></script>
 	<script src="js/catalog.js"></script>
 	<script src="js/product.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-	<script src="js/Slide-shou.js"></script>
+	<script src="js/filter.js"></script>
+	<script src="main.js?v3"></script>
+
 </body>
 
 </html>

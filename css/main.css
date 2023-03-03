@@ -39,7 +39,7 @@ img{
 }
 
 .section__header{
-	margin-bottom: 90px;
+	margin-bottom: 40px;
 }
 
 .container{
@@ -49,18 +49,19 @@ img{
 }
 
 
+
 .section{
 	position: relative;
 	display: flex;
 	justify-content: center;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .section__title{
 	color: black;
 	padding: 40px 0px;
-	font-size: 60px;
+	font-size: 80px;
 	text-align: center;
 	margin: 0 auto;
 	font-family: 'Philosopher', sans-serif;
@@ -111,6 +112,22 @@ img{
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0px -35px;
+}
+
+.catalog-menu{
+	margin: 0px auto;
+}
+
+.menu-pos{
+
+}
+
+.list-menu{
+	text-align: center;
+}
+
+.menu-img{
+	width: 60%;
 }
 
 .catalog__item{
@@ -209,7 +226,11 @@ img{
 		border-top: 2px solid white;
 	}
 	.section__title{
-		padding: 30px 0px;
+		padding-bottom: 50px;
+	}
+
+	.menu-img{
+		width: 70%;
 	}
 }
 
@@ -221,11 +242,11 @@ img{
 	}
 	.catalog-nav__wrapper{
 		flex-wrap: wrap;
-		width: 100%;
+		width: 80%;
 	}
 
 	.catalog-nav__item{
-		width: 50%;
+		width: 40%;
 		flex-grow: 1;
 	}
 
@@ -235,13 +256,17 @@ img{
 		height: 100%;
 		width: 100%;
 		border-top: 2px solid white;
-		font-size: 23px;
-		padding: 10px 5px;
+		font-size: 18px;
+		padding: 15px 10px;
 	}
 
 	.section__title{
-		padding: 20px 0px;
-		font-size: 45px;
+		padding-bottom: 50px;
+		font-size: 80px;
+	}
+
+	.menu-img{
+		width: 80%;
 	}
 }
 @media (max-width: 1250px) {
@@ -296,6 +321,11 @@ img{
 		border-bottom: 0;
 		padding-bottom: 0;
 	}
+
+	.menu-img{
+		width: 100%;
+	}
+
 }
 
 @media (max-width: 1250px) {
@@ -349,8 +379,9 @@ img{
 		border-bottom: 0;
 		padding-bottom: 0;
 	}
-	.section__title{
-		font-size: 50px;
+
+	.section-catalog .container{
+		width: 100%;
 	}
 }
 

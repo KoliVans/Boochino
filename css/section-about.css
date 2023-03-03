@@ -2,6 +2,7 @@
 	background:rgb(15, 15, 15);
 	color: #fff;
 	position: relative;
+	padding: 100px 0;
 }
 
 .section-about__container {
@@ -26,6 +27,7 @@
 
 .section-about__title {
 	color: #fff;
+	font-size: 45px;
 	text-align: left;
 	margin-bottom: 17px;
 }
@@ -34,6 +36,10 @@
 	font-size: 24px;
 	line-height: 1.67;
 	margin: 0 20px 0 0;
+}
+
+.button-bron{
+	padding: 20px 40px;
 }
 
 @media (max-width: 1200px) {
@@ -46,6 +52,11 @@
 	.section-about__content {
 		padding-left: 50px;
 	}
+
+	.section-about__title {
+		font-size: 30px;
+	}
+	
 }
 
 @media (max-width: 767px) {
@@ -54,6 +65,9 @@
 		display: none;
 	}
 
+	.section-about,.section-about__title{
+		text-align: center;
+	}
 
 	.section-about__container {
 		justify-content: center;
@@ -67,6 +81,7 @@
 
 	.section-about__title {
 		margin: 0 20px;
+		padding-bottom: 40px;
 		font-size: 25px;
 	}
 

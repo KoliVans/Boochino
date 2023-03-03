@@ -27,6 +27,13 @@
 }
 
 
+.hidden,.img-noactiv{
+	display: none;
+}
+
+.show {
+	display: block;
+ }
 
 @media (max-width: 576px) {
 .btn {
