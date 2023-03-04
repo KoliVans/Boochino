@@ -35,6 +35,10 @@
 	display: block;
  }
 
+ .product__btn{
+	padding: 10px 20px;
+ }
+
 @media (max-width: 576px) {
 .btn {
 	font-size: 19px;
@@ -43,7 +47,7 @@
 }
 
 .product__discription{
-	font-size: 19px;
+	font-size: 15px;
 }
 }
 

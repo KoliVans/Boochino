@@ -155,7 +155,6 @@ img{
 .product{
 	display: flex;
    flex-direction: column;
-   height: 100%;
 }
 
 .product__img{
@@ -176,7 +175,7 @@ img{
 	margin: 0 0 10px;
 	font-family: 'Philosopher', sans-serif;
 	font-weight: 900px;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .product__discription{
@@ -382,10 +381,6 @@ img{
 		margin-bottom: 0;
 	}
 
-	.catalog__item:last-of-type .catalog__product {
-		border-bottom: 0;
-		padding-bottom: 0;
-	}
 
 	.section-catalog .container{
 		width: 100%;
