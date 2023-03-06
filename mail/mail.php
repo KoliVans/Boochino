@@ -1,28 +1,29 @@
+
 <?php
 
 $method = $_SERVER['REQUEST_METHOD'];
 
 if ($method !== 'POST') {
-  exit();
+ exit();
 }
 
 $project_name = 'Boochino';
-$admin_email = '';
+$admin_email = 'boochino1@boochino.ru';
 $form_subject = 'Заявка с сайта Boochino';
 $message = '';
 
 $color_counter = 1;
 
-foreach ($_POST as $key => $value) {
-  if ($value === '') {
+foreach ($_POST as  $key => $value) {
+  if ($ === ") {
     continue;
   }
-  $color = $color_counter % 2 === 0 ? '#fff' : '#f8f8f8';
+  $color = $color_counter % 2 === 0 ? '#fff': '#f8f8f8';
   $message .= "
-    <tr style='background-color: $color;'>
-      <td style='padding: 10px; border: 1px solid #e9e9e9;'>$key</td>
-      <td style='padding: 10px; border: 1px solid #e9e9e9;'>$value</td>
-    </tr>";
+ <tr style='background-color:  $color;'>
+ <td style='padding: 10px; border: 1px solid #e9e9e9;'>$key</td>
+ <td style='padding: 10px; border: 1px solid #e9e9e9;'>$value</td>
+ </tr>";
 
   $color_counter++;
 }

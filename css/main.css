@@ -155,6 +155,7 @@ img{
 .product{
 	display: flex;
    flex-direction: column;
+	height: 100%;
 }
 
 .product__img{
@@ -328,6 +329,15 @@ img{
 	.menu-img{
 		width: 100%;
 	}
+
+	.catalog-nav__item:nth-of-type(1) .catalog-nav__btn,
+  .catalog-nav__item:nth-of-type(2) .catalog-nav__btn {
+    border-top: 0;
+  }
+
+  .catalog-nav__item:nth-of-type(even) .catalog-nav__btn {
+    border-right: 0;
+  }
 
 }
 
