@@ -15,7 +15,7 @@ $message = '';
 $color_counter = 1;
 
 foreach ($_POST as  $key => $value) {
-  if ($ === ") {
+  if ($value === '') {
     continue;
   }
   $color = $color_counter % 2 === 0 ? '#fff': '#f8f8f8';

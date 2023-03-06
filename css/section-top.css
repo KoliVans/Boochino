@@ -1,6 +1,6 @@
 .section-top{
 	height: 100vh;
-	background: black url(../img/section-top/Main_side.jpg) no-repeat center;
+	background: black no-repeat center;
 	overflow: hidden;
 	display: flex;
 	justify-content: center;

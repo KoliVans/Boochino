@@ -21,6 +21,20 @@
 	<link rel="stylesheet" href="css/section-contacts.css">
 	<link rel="stylesheet" href="css/popup.css">
 
+	<meta property="og:title" content="Boochino,Боочино,Бучино,Бучино Нижний Новгород,Boochino Нижний Новгород" />
+	<meta property="og:type" content="Boochino — совершенно новое, концептуальное заведение в Нижнем Новгороде." />
+	<meta property="og:image" content="img/contacts/Contacts.jpg" />
+
+	<meta name="description" content="Boochino — совершенно новое, концептуальное заведение в Нижнем Новгороде.">
+	<meta name="keywords" content="Boochino,Боочино,Бучино,Бучино Нижний Новгород,Boochino Нижний Новгород,Ресторан,Азиатская кухня,Европейская кухня,Доставка">
+
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#000000">
+
 	<title>Boochino</title>
 </head>
 
@@ -31,7 +45,10 @@
 		<div class="container header-page__container">
 			<div class="header-page__start">
 				<div class="logo">
-					<img class="logo__img" src="img/common/fg4nx8MMqI4.jpg" alt="Logo Boochino" width="100px" height="100px">
+					<img class="logo__img lazy"
+						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+						data-src="img/common/fg4nx8MMqI4.webp" data-src-replace-webp="img/common/fg4nx8MMqI4.jpg"
+						alt="Logo Boochino" width="70" height="70">
 					<div class="logo__name">Boochino</div>
 				</div>
 			</div>
@@ -75,9 +92,10 @@
 	</header>
 	<!--header-page-->
 	<!--section-top-->
-	<section class="section-top">
+	<section class="section-top lazy" data-src="img/section-top/Main_side.webp"
+		data-src-replace-webp="img/section-top/Main_side.jpg">
 		<div class="container section-top__container">
-			<h1 class="section-top__title">boochino</h1>
+			<h1 class="section-top__title">Boochino</h1>
 			<p class="section-top__info">Лучший ресторан в Нижнем Новгороде</p>
 		</div>
 	</section>
@@ -94,7 +112,10 @@
 			<div class="catalog-info">
 				<div class="catalog__item-info">
 					<div class="info product catalog__info">
-						<img class="info__img" src="img/info-icon/ca7b2844fbfcbb099ffe75d8cd98b7ff.jpg" alt="">
+						<img class="info__img lazy"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+							data-src="img/info-icon/ca7b2844fbfcbb099ffe75d8cd98b7ff.webp"
+							data-src-replace-webp="img/info-icon/ca7b2844fbfcbb099ffe75d8cd98b7ff.jpg" alt="">
 						<div class="info__content">
 							<h3 class="info__title">Мы распологаемся</h3>
 							<p class="info__discription">Городецкий Переулок 6</p>
@@ -103,7 +124,9 @@
 				</div>
 				<div class="catalog__item-info">
 					<div class="info product catalog__info">
-						<img class="info__img" src="img/info-icon/Clock_(89654)_-_The_Noun_Project.svg.png" alt="">
+						<img class="info__img lazy"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+							data-src="img/info-icon/Clock.webp" data-src-replace-webp="img/info-icon/Cloc.png" alt="">
 						<div class="info__content">
 							<h3 class="info__title">Время, работы ресторана </h3>
 							<div class="info__discription">
@@ -116,7 +139,10 @@
 				</div>
 				<div class="catalog__item-info">
 					<div class="info product catalog__info">
-						<img class="info__img" src="img/info-icon/b20bb1ae031f9df6c04402cdbb2e890d.png" alt="">
+						<img class="info__img lazy"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+							data-src="img/info-icon/b20bb1ae031f9df6c04402cdbb2e890d.webp"
+							data-src-replace-webp="img/info-icon/b20bb1ae031f9df6c04402cdbb2e890d.png" alt="">
 						<div class="info__content">
 							<h3 class="info__title">Как связаться с нами</h3>
 							<p class="info__discription">По телефону </p>
@@ -126,8 +152,8 @@
 				</div>
 			</div>
 			<div class="footer-info">
-				<button class="button-next" type="button" href="">Бронь </button>
-				<button class="button-next" type="button" href="menu.html">Доставка</button>
+				<button class="button-next" type="button">Бронь </button>
+				<button class="button-next" type="button" onclick="window.location.href = 'menu.html';">Доставка</button>
 			</div>
 		</div>
 	</section>
@@ -135,7 +161,9 @@
 
 	<!--section-info-->
 	<section class="section section-about">
-		<img src="img/section-about/orig.jfif" alt="" class="section-about__img">
+		<img data-src="img/section-about/orig.webp"
+			src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+			data-src-replace-webp="img/section-about/orig.jfif" alt="" class="section-about__img lazy">
 		<div class="container section-about__container">
 			<div class="section-about__content">
 				<h2 class="section__title section-about__title">Приходи на бизнесс-ланч в Boochino !</h2>
@@ -150,36 +178,48 @@
 	<!--section-spesial-->
 
 	<!--section-galery-->
-	<section class="section section-galery">
+	<div class="section section-galery">
 
 		<ul class="image-gallery">
 			<li>
-				<img src="https://avatars.mds.yandex.net/get-altay/7760835/2a000001837ed4f086fa4c7765e61f3f09e8/XXXL"
-					alt="" />
+				<img class="lazy"
+					src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+					data-src="https://avatars.mds.yandex.net/get-altay/7760835/2a000001837ed4f086fa4c7765e61f3f09e8/XXXL"
+					alt="">
 			</li>
 			<li>
-				<img src="https://avatars.mds.yandex.net/get-altay/7742431/2a000001837ec8185944f3f2e26010cb224b/XXXL"
-					alt="" />
+				<img class="lazy"
+					src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+					data-src="https://avatars.mds.yandex.net/get-altay/7742431/2a000001837ec8185944f3f2e26010cb224b/XXXL"
+					alt="">
 			</li>
 			<li>
-				<img src="https://avatars.mds.yandex.net/get-altay/7659180/2a000001837ed67ba918bed58290952d2004/XXXL"
-					alt="" />
+				<img class="lazy"
+					src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+					data-src="https://avatars.mds.yandex.net/get-altay/7659180/2a000001837ed67ba918bed58290952d2004/XXXL"
+					alt="">
 			</li>
 			<li>
-				<img src="https://avatars.mds.yandex.net/get-altay/6145018/2a000001837ec61ac3fd5a8888ce52cb5dcf/XXXL"
-					alt="" />
+				<img class="lazy"
+					src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+					data-src="https://avatars.mds.yandex.net/get-altay/6145018/2a000001837ec61ac3fd5a8888ce52cb5dcf/XXXL"
+					alt="">
 			</li>
 			<li>
-				<img src="https://avatars.mds.yandex.net/get-altay/6145018/2a000001837ec5efcec8023ba5ff874df45e/XXXL"
-					alt="" />
+				<img class="lazy"
+					src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+					data-src="https://avatars.mds.yandex.net/get-altay/6145018/2a000001837ec5efcec8023ba5ff874df45e/XXXL"
+					alt="">
 			</li>
 			<li>
-				<img src="https://avatars.mds.yandex.net/get-altay/7668046/2a000001837ed65a44eca8df358cc130ddb9/XXXL"
-					alt="" />
+				<img class="lazy"
+					src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+					data-src="https://avatars.mds.yandex.net/get-altay/7668046/2a000001837ed65a44eca8df358cc130ddb9/XXXL"
+					alt="">
 			</li>
 		</ul>
 
-	</section>
+	</div>
 	<!--section-galery-->
 
 
@@ -192,16 +232,20 @@
 				<nav class="catalog-nav" id="catalog-nav">
 					<ul class="catalog-nav__wrapper">
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__button is-active" type="button" data-filter="Kitchen" onclick=filtermenu(event)>Кухня</button>
+							<button class="catalog-nav__button is-active" type="button" data-filter="Kitchen"
+								onclick=filtermenu(event)>Кухня</button>
 						</li>
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__button" type="button" data-filter="Bar" onclick=filtermenu(event)>Бар</button>
+							<button class="catalog-nav__button" type="button" data-filter="Bar"
+								onclick=filtermenu(event)>Бар</button>
 						</li>
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__button" type="button" data-filter="Kombo" onclick=filtermenu(event)>Комбо</button>
+							<button class="catalog-nav__button" type="button" data-filter="Kombo"
+								onclick=filtermenu(event)>Комбо</button>
 						</li>
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__button" type="button" data-filter="Biznes" onclick=filtermenu(event)>Бизнес-ланч</button>
+							<button class="catalog-nav__button" type="button" data-filter="Biznes"
+								onclick=filtermenu(event)>Бизнес-ланч</button>
 						</li>
 					</ul>
 				</nav>
@@ -211,16 +255,26 @@
 				<div class="menu-pos">
 					<div class="list-menu">
 						<div class="Kitchenmenu Kitchen">
-							<img class="menu-img img-activ" src="img/section-catalog/Menu.jpg" alt="">
+							<img class="menu-img img-activ lazy"
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+								data-src="img/section-catalog/Menu.webp" data-src-replace-webp="img/section-catalog/Menu.jpg"
+								alt="">
 						</div>
-						<div class="Barmenu Bar hidden" >
-							<img class="menu-img" src="img/contacts/Contacts.jpg" alt="">
+						<div class="Barmenu Bar hidden">
+							<img class="menu-img lazy"
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+								data-src="img/contacts/Contacts.webp" data-src-replace-webp="img/contacts/Contacts.jpg" alt="">
 						</div>
-						<div class="Kombomenu Kombo hidden" >
-							<img  class="menu-img" src="img/section-catalog/Kombo.jpg" alt="">
+						<div class="Kombomenu Kombo hidden">
+							<img class="menu-img lazy"
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+								data-src="img/section-catalog/Kombo.webp" data-src-replace-webp="img/section-catalog/Kombo.jpg"
+								alt="">
 						</div>
-						<div class="Biznesmenu Biznes hidden" >
-							<img  class="menu-img" src="img/contacts/Contacts.jpg" alt="">
+						<div class="Biznesmenu Biznes hidden">
+							<img class="menu-img lazy"
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+								data-src="img/contacts/Contacts.webp" data-src-replace-webp="img/contacts/Contacts.jpg" alt="">
 						</div>
 					</div>
 				</div>
@@ -230,8 +284,9 @@
 	<!--section-catalog-->
 
 	<section class="section section-about">
-		<img src="https://avatars.mds.yandex.net/get-altay/7730113/2a000001837ed688c59683457cb9c5944a5f/XXXL" alt=""
-			class="section-about__img">
+		<img class="section-about__img lazy"
+			src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+			data-src="https://avatars.mds.yandex.net/get-altay/7730113/2a000001837ed688c59683457cb9c5944a5f/XXXL" alt="">
 		<div class="container section-about__container">
 			<div class="section-about__content">
 				<h2 class="section__title section-about__title">Забронировать столик</h2>
@@ -253,7 +308,10 @@
 			<div class="contacts">
 				<div class="contacts__start">
 					<div class="contacts__map">
-						<img src="img/contacts/Hn30wHq_67I.jpg" alt="">
+						<img class="lazy"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+							data-src="img/contacts/Hn30wHq_67I.webp" data-src-replace-webp="img/contacts/Hn30wHq_67I.jpg"
+							alt="">
 					</div>
 				</div>
 				<div class="contacts__end">
@@ -389,16 +447,17 @@
 					<h2 class="page-title popup__title">Заполните форму</h2>
 					<p class="popup__subtitle popup__subtitle--order">Доставка в течении часа</p>
 					<div class="order">
-						<img class="order__img"
-							src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png"
+						<img class="order__img lazy"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+							data-src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png"
 							alt="">
 						<h3 class="order__title">
 							<span class="order-product-title">Паста</span>
 							<span class="order-product-price">350</span> &#8381;
 						</h3>
 						<form class="form form-send">
-							<input class="order-info-title" type="hidden" name="Паста">
-							<input class="order-info-price" type="hidden" name="цена">
+							<input class="order-info-title" type="hidden" name="Имя">
+							<input class="order-info-price" type="hidden" name="Цена">
 							<input class="form__input" type="text" name="имя" placeholder="Имя" required>
 							<input class="form__input" type="text" name="телефон" placeholder="Телефон" required>
 							<input class="form__input" type="text" name="адрес" placeholder="Адрес" required>
@@ -422,7 +481,7 @@
 				<div class="popup__content">
 					<button class="btn-close popup__btn-close popup-close"></button>
 					<h2 class="page-title popup__title">Успешно отправлено</h2>
-					<p class="popup__subtitle">Мы уже начали готовить вашу пиццу</p>
+					<p class="popup__subtitle">Мы начали готовить ваш заказ</p>
 				</div>
 			</div>
 		</div>
@@ -444,9 +503,7 @@
 	</div>
 	<!-- /.popup-error -->
 
-	<script src="https://api-maps.yandex.ru/2.1/?lang=en_RU" type="text/javascript"></script>
-
-	<script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js "></script>
+	<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
 
 	<script src="js/myLib.js"></script>
 	<script src="js/popup.js"></script>

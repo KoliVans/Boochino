@@ -38,7 +38,7 @@
 			myLib.toggleScroll();
 		 }
  
-		 if (xhr.response === 'success') {
+		 if (xhr.response = 'success') {
 			document.querySelector('.popup-thanks').classList.add('is-active');
 		 } else {
 			document.querySelector('.popup-error').classList.add('is-active');
