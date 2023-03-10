@@ -1,5 +1,6 @@
+
 ;(function() {
-	var forms = document.querySelectorAll('.form-send');
+	var forms = document.querySelectorAll('.form-send-bron');
  
 	if (forms.length === 0) {
 	  return;
@@ -30,17 +31,9 @@
 		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   
 		xhr.onload = function() {
-		  var activePopup = document.querySelector('.popup.is-active');
-  
-		  if (activePopup) {
-			 activePopup.classList.remove('is-active');
-		  } else {
-			 myLib.toggleScroll();
-		  }
   
 		  if (xhr.response = 'success') {
 			 document.querySelector('.popup-thanks').classList.add('is-active');
-			 document.dispatchEvent(new CustomEvent('reset-cart'));
 		  } else {
 			 document.querySelector('.popup-error').classList.add('is-active');
 		  }

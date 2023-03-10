@@ -21,12 +21,14 @@
 	<link rel="stylesheet" href="css/section-contacts.css">
 	<link rel="stylesheet" href="css/popup.css">
 
+	<meta name="yandex-verification" content="bc9afbe17a5097fc" />
+
 	<meta property="og:title" content="Boochino,Боочино,Бучино,Бучино Нижний Новгород,Boochino Нижний Новгород" />
 	<meta property="og:type" content="Boochino — совершенно новое, концептуальное заведение в Нижнем Новгороде." />
 	<meta property="og:image" content="img/contacts/Contacts.jpg" />
 
-	<meta name="description" content="Boochino — совершенно новое, концептуальное заведение в Нижнем Новгороде.">
-	<meta name="keywords" content="Boochino,Боочино,Бучино,Бучино Нижний Новгород,Boochino Нижний Новгород,Ресторан,Азиатская кухня,Европейская кухня,Доставка">
+	<meta name="description" content="Boochino ресторан в Нижнем Новогороде. Азиатская и Европейская кухня">
+	<meta name="keywords" content="кухня,меню,ресторан,Boochino,Боочино,Бучино,Нижний Новгород,Ресторан,Азиатская,Европейская,Доставка,Вкусно">
 
 	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -35,7 +37,7 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#000000">
 
-	<title>Boochino</title>
+	<title>Boochino Бучино — место, где абсолютно всё сделано для Вашего комфорта и незабываемого отдыха. </title>
 </head>
 
 <body>
@@ -290,10 +292,16 @@
 		<div class="container section-about__container">
 			<div class="section-about__content">
 				<h2 class="section__title section-about__title">Забронировать столик</h2>
-				<p class="section-about__text"> У нас царит неспешная
-					спокойная атмосфера, в которой можно расслабиться, наслаждаясь вкусной едой под приятную музыку.</p>
+				<p class="section-about__text"> У нас царит неспешная спокойная атмосфера, в которой можно расслабиться, наслаждаясь вкусной едой под приятную музыку.</p>
 				<div class="footer-info">
-					<button class="button-next button-bron" type="button">Бронь </button>
+					<form class="form form-send-bron">
+						<input class="form__input" type="text" name="имя" placeholder="Имя" required>
+						<input class="form__input" type="text" name="телефон" placeholder="Телефон" required>
+						<input class="form__input" type="date"  name="адрес" placeholder="Дата" required>
+						<input class="form__input" type="time" name="время"min="11:00" max="22:00" name="Время" placeholder="Время c 11:00 до 22:00" required>
+						<input class="form__input" type="text"  name="кол-во_гостей" placeholder="Сколько вас будет ?" required>
+						<button class="btn form__btn" type="submit">Отправить</button>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -455,17 +463,14 @@
 							<span class="order-product-title">Паста</span>
 							<span class="order-product-price">350</span> &#8381;
 						</h3>
-						<form class="form form-send">
-							<input class="order-info-title" type="hidden" name="Имя">
-							<input class="order-info-price" type="hidden" name="Цена">
-							<input class="form__input" type="text" name="имя" placeholder="Имя" required>
-							<input class="form__input" type="text" name="телефон" placeholder="Телефон" required>
-							<input class="form__input" type="text" name="адрес" placeholder="Адрес" required>
-							<select class="form__input" name="оплата">
-								<option value="Оплата наличными">Оплата наличными</option>
-								<option value="Оплата картой">Оплата картой</option>
-							</select>
-							<button class="btn form__btn" type="submit">Отправить</button>
+						<form class="form fotm-send">
+							<h3 class="order__title">Заполните форму</h3>
+								<div class="form__main">
+								<input class="form__input" type="text" name="Имя" placeholder="Имя" required="">
+								<input class="form__input" type="text" name="Телефон" placeholder="Телефон" required="">
+								<input class="form__input" type="text" name="Адрес" placeholder="Адрес" required="">
+								<input class="js-cart-total-price-input" type="hidden" name="Общая сумма">
+								<button class="btn form__btn" type="submit">Отправить</button>
 						</form>
 					</div>
 				</div>
@@ -510,6 +515,9 @@
 	<script src="js/header.js"></script>
 	<script src="js/scrollTo.js"></script>
 	<script src="js/filter.js"></script>
+	<script src="js/form-bron.js"></script>
+	<script src="js/product.js"></script>
+	<script src="js/catalog.js"></script>
 
 </body>
 
