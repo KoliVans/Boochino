@@ -68,7 +68,7 @@
 							</a>
 						</li>
 						<li class="header-page__li">
-							<a class="header-page__link" href="#">
+							<a class="header-page__link" href="#" data-scroll-to="section-bron">
 								<span class="header-page__text">Бронь</span>
 							</a>
 						</li>
@@ -154,7 +154,7 @@
 				</div>
 			</div>
 			<div class="footer-info">
-				<button class="button-next" type="button">Бронь </button>
+				<button class="button-next" type="button" onclick="window.location.href = 'section-bron';">Бронь</button> 
 				<button class="button-next" type="button" onclick="window.location.href = 'menu.html';">Доставка</button>
 			</div>
 		</div>
@@ -285,7 +285,7 @@
 	</section>
 	<!--section-catalog-->
 
-	<section class="section section-about">
+	<section class="section section-about section-bron">
 		<img class="section-about__img lazy"
 			src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
 			data-src="https://avatars.mds.yandex.net/get-altay/7730113/2a000001837ed688c59683457cb9c5944a5f/XXXL" alt="">
@@ -446,47 +446,15 @@
 	</div>
 	<!-- /.popup-menu -->
 
-	<!-- popup-order -->
-	<div class="popup popup-order">
-		<div class="popup__wrapper">
-			<div class="popup__inner">
-				<div class="popup__content">
-					<button class="btn-close popup__btn-close popup-close"></button>
-					<h2 class="page-title popup__title">Заполните форму</h2>
-					<p class="popup__subtitle popup__subtitle--order">Доставка в течении часа</p>
-					<div class="order">
-						<img class="order__img lazy"
-							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-							data-src="img/section-catalog/pizza-arad-coandi-spaghete-carbonara-png-transparent-png-carbonara-png-860_618.png"
-							alt="">
-						<h3 class="order__title">
-							<span class="order-product-title">Паста</span>
-							<span class="order-product-price">350</span> &#8381;
-						</h3>
-						<form class="form fotm-send">
-							<h3 class="order__title">Заполните форму</h3>
-								<div class="form__main">
-								<input class="form__input" type="text" name="Имя" placeholder="Имя" required="">
-								<input class="form__input" type="text" name="Телефон" placeholder="Телефон" required="">
-								<input class="form__input" type="text" name="Адрес" placeholder="Адрес" required="">
-								<input class="js-cart-total-price-input" type="hidden" name="Общая сумма">
-								<button class="btn form__btn" type="submit">Отправить</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- /.popup-order -->
 
 	<!-- popup-thanks -->
-	<div class="popup popup-thanks">
+	<div class="bron popup-thanks">
 		<div class="popup__wrapper">
 			<div class="popup__inner">
 				<div class="popup__content">
 					<button class="btn-close popup__btn-close popup-close"></button>
 					<h2 class="page-title popup__title">Успешно отправлено</h2>
-					<p class="popup__subtitle">Мы начали готовить ваш заказ</p>
+					<p class="popup__subtitle">Мы получили вашу заявку на бронь стола.</p>
 				</div>
 			</div>
 		</div>
@@ -494,13 +462,13 @@
 	<!-- /.popup-thanks -->
 
 	<!-- popup-error -->
-	<div class="popup popup-error">
+	<div class="bron popup-error">
 		<div class="popup__wrapper">
 			<div class="popup__inner">
 				<div class="popup__content">
 					<button class="btn-close popup__btn-close popup-close"></button>
 					<h2 class="page-title popup__title">Произошла ошибка</h2>
-					<p class="popup__subtitle">Пожалуйста, сделайте заказ по номеру <a class="popup__link"
+					<p class="popup__subtitle">Пожалуйста, сделайте бронь по номеру <a class="popup__link"
 							href="tel:+78312888888">+7 (831) 288-88-88</a></p>
 				</div>
 			</div>

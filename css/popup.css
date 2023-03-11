@@ -1,4 +1,4 @@
-.popup {
+.popup,.bron {
 	position: fixed;
 	z-index: 10;
 	top: 0;
@@ -12,7 +12,13 @@
 	visibility: hidden;
  }
  
- .popup.is-active {
+ .popup.is-active{
+	pointer-events: auto;
+	opacity: 1;
+	visibility: visible;
+ }
+
+ .bron.is-active{
 	pointer-events: auto;
 	opacity: 1;
 	visibility: visible;
