@@ -32,6 +32,12 @@
 	<meta name="description" content="Boochino ресторан в Нижнем Новогороде. Азиатская и Европейская кухня">
 	<meta name="keywords" content="кухня,меню,ресторан,Boochino,Боочино,Бучино,Нижний Новгород,Ресторан,Азиатская,Европейская,Доставка,Кофейня">
 
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png" />
+	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="img/favicon/apple-touch-icon-120x120.png" sizes="120x120" />
 	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -39,6 +45,7 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#000000">
 
+	<script src="https://api-maps.yandex.ru/3.0/?apikey=<bb4bcb0a-df4e-4572-bce2-ec255beb51fc>&lang=ru_RU"></script>
 
 	<title>Boochino — место, где абсолютно всё сделано для Вашего комфорта и незабываемого отдыха. </title>
 </head>
@@ -319,10 +326,7 @@
 			<div class="contacts">
 				<div class="contacts__start">
 					<div class="contacts__map">
-						<img class="lazy"
-							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-							data-src="img/contacts/Hn30wHq_67I.webp" data-src-replace-webp="img/contacts/Hn30wHq_67I.jpg"
-							alt="">
+						<div id="map" style="width: 450px; height: 350px;"></div>
 					</div>
 				</div>
 				<div class="contacts__end">
@@ -480,6 +484,9 @@
 	<!-- /.popup-error -->
 
 	<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+	
+
+	<script src="js/map.js"></script>
 
 	<script src="js/myLib.js"></script>
 	<script src="js/popup.js"></script>
