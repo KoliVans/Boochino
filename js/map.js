@@ -1,24 +1,28 @@
-ymaps.ready(init); 
-	var myMap;
-	
-	function init() {
-	
-		myMap = new ymaps.Map("map", {
-			center: [43.238253, 76.945465], // Координаты центра карты
-			zoom: 13 // Маштаб карты
-		}); 
-	
-		myMap.controls.add(
-			new ymaps.control.ZoomControl()  // Добавление элемента управления картой
-		); 
-	
-		myPlacemark = new ymaps.Placemark([43.238253,76.945465], { // Координаты метки объекта
-			balloonContent: "<div class='ya_map'>Заезжайте в гости!</div>" // Подсказка метки
-		}, {
-			preset: "twirl#redDotIcon" // Тип метки
-		});
-		
-		myMap.geoObjects.add(myPlacemark); // Добавление метки
-		myPlacemark.balloon.open(); // Открытие подсказки метки
-		
-	};
+;(function() {
+	ymaps.ready(function () {
+		var myMap = new ymaps.Map('ymap', {
+				  center: [56.327795, 43.985029],
+				  zoom: 19
+			 }, {
+				  searchControlProvider: 'yandex#search'
+			 }),
+  
+			 // Создаём макет содержимого.
+  
+			 myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				  balloonContent: 'г. Нижний Новгород, Городецкий Переулок 6'
+			 }, {
+				  // Опции.
+				  // Необходимо указать данный тип макета.
+				  iconLayout: 'default#image',
+				  // Своё изображение иконки метки.
+				  iconImageHref: 'img/favicon/favicon.ico',
+				  // Размеры метки.
+				  iconImageSize: [30, 30],
+				  // Смещение левого верхнего угла иконки относительно
+				  // её "ножки" (точки привязки).
+			 });
+  
+		myMap.geoObjects.add(myPlacemark)
+  });
+ })();

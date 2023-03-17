@@ -45,8 +45,6 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#000000">
 
-	<script src="https://api-maps.yandex.ru/3.0/?apikey=<bb4bcb0a-df4e-4572-bce2-ec255beb51fc>&lang=ru_RU"></script>
-
 	<title>Boochino — место, где абсолютно всё сделано для Вашего комфорта и незабываемого отдыха. </title>
 </head>
 
@@ -310,6 +308,7 @@
 						<input class="form__input" type="date"  name="адрес" placeholder="Дата" required>
 						<input class="form__input" type="time" name="время"min="11:00" max="22:00" name="Время" placeholder="Время c 11:00 до 22:00" required>
 						<input class="form__input" type="text"  name="кол-во_гостей" placeholder="Сколько вас будет ?" required>
+						<input class="form__input" type="text"  name="пожелание" placeholder="Ваши пожелание" required>
 						<button class="btn form__btn" type="submit">Отправить</button>
 					</form>
 				</div>
@@ -325,9 +324,7 @@
 			</header>
 			<div class="contacts">
 				<div class="contacts__start">
-					<div class="contacts__map">
-						<div id="map" style="width: 450px; height: 350px;"></div>
-					</div>
+					<div class="contacts__map" id="ymap"></div>
 				</div>
 				<div class="contacts__end">
 					<div class="contacts__item">
@@ -484,6 +481,7 @@
 	<!-- /.popup-error -->
 
 	<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	
 
 	<script src="js/map.js"></script>

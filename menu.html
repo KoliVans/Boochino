@@ -1224,9 +1224,7 @@
 			</header>
 			<div class="contacts">
 				<div class="contacts__start">
-					<div class="contacts__map">
-						<img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/contacts/Hn30wHq_67I.webp" data-src-replace-webp="img/contacts/Hn30wHq_67I.jpg" alt="">
-					</div>
+					<div class="contacts__map" id="ymap"></div>
 				</div>
 				<div class="contacts__end">
 					<div class="contacts__item">
@@ -1373,7 +1371,9 @@
 						<div class="form__main">
 						<input class="form__input" type="text" name="Имя" placeholder="Имя" required="">
 						<input class="form__input" type="text" name="Телефон" placeholder="Телефон" required="">
-						<input class="form__input" type="text" name="Адрес" placeholder="Адрес" required="">
+						<input class="form__input" type="text" name="Улица" placeholder="Улица" required="">
+						<input class="form__input" type="text" name="Дом" placeholder="Дом" required="">
+						<input class="form__input" type="text" name="Квартира" placeholder="Квартира" required="">
 						<input class="js-cart-total-price-input" type="hidden" name="Общая сумма">
 						<select class="form__input" name="оплата">
 							<option value="Оплата наличными">Оплата наличными</option>
@@ -1432,6 +1432,10 @@
 	 </button>
 
 	<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	
+
+	<script src="js/map.js"></script>
 
 	<script src="js/myLib.js"></script>
 	<script src="js/header.js"></script>

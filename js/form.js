@@ -20,6 +20,7 @@
 		}
 		return str;
 	 };
+	 
   
 	 var formSend = function(form) {
 		var data = serialize(form);
